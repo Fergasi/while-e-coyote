@@ -3,7 +3,7 @@ const prompt = require('prompt-sync')();
 const n = Number(prompt("Enter the number of Fibonacci terms you want to display: "));
 
 // Create a new array of size 'n'
-var series = new Array(n); 
+var series = Array(n); 
   
 // Fills all places in array with 0
 series.fill(0);  
