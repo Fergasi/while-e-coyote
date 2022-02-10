@@ -6,7 +6,7 @@ let z = n;
 
 while (z.length < 10){
      
-     console.log(z)
+     console.log(z);
      
      z = z.concat(n);
      
