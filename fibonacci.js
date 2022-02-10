@@ -2,29 +2,23 @@ const prompt = require('prompt-sync')();
 
 const n = Number(prompt("Enter the number of Fibonacci terms you want to display: "));
 
-// Create a new array of size 'n'
-var series = new Array(n); 
-  
-// Fills all places in array with 0
-series.fill(0);  
-  
-// Seed value for 1st element
-series[0] = 0; 
-  
-// Seed value for 2nd element
-series[1] = 1;  
-  
-// Initialize the conditional variable
-let i = 2;  
+let a = 0;
+let b = 1;
+let c = 1;
 
-while(i < n) {
+let count = 2
 
-    // Apply basic Fibonacci formulae
-    series[i] = series[i-1] + series[i-2];  
-     
-    // Increment the conditional variable
-    i++;  
+console.log(a);
+console.log(b);
+
+while (count < n) {
+
+    console.log(c);
+
+   a = b; 
+   b = c;
+   c = a + b;
+    
+
+    count = count + 1;
 }
-  
-// Print the series
-console.log(series); 
